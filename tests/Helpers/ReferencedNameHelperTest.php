@@ -43,6 +43,7 @@ class ReferencedNameHelperTest extends \SlevomatCodingStandard\Helpers\TestCase
 	}
 
 	/**
+	 * @phpcsSuppress SlevomatCodingStandard.Typehints.TypeHintDeclaration.uselessDocComment
 	 * @requires PHP 7.1
 	 */
 	public function testMultipleExceptionsCatch()
