@@ -45,6 +45,11 @@ class FooClass extends \ExtendedClass implements \ImplementedInterface, \SecondI
 		$ipsum = IpsumClass::IPSUM_CONSTANT;
 	}
 
+	public function nullableReturnTypeHint(?NullableParameterTypeHint $data): ?NullableReturnTypeHint
+	{
+
+	}
+
 }
 
 interface FooInterface extends \ExtendedInterface, \SecondExtendedInterface, \ThirdExtendedInterface

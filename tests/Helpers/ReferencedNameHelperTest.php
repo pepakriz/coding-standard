@@ -30,6 +30,8 @@ class ReferencedNameHelperTest extends \SlevomatCodingStandard\Helpers\TestCase
 			['BAZ_CONSTANT', false, true],
 			['LoremClass', false, false],
 			['IpsumClass', false, false],
+			['NullableParameterTypeHint', false, false],
+			['NullableReturnTypeHint', false, false],
 			['\ExtendedInterface', false, false],
 			['\SecondExtendedInterface', false, false],
 			['\ThirdExtendedInterface', false, false],

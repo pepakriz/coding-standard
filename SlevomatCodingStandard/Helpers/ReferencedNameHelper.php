@@ -87,6 +87,9 @@ class ReferencedNameHelper
 						&& !in_array($tokens[$nextTokenAfterEndPointer]['code'], [
 							T_DOUBLE_COLON,
 						], true)
+						&& !in_array($tokens[$previousTokenBeforeStartPointer]['code'], [
+							T_INLINE_THEN, // nullable return hint
+						], true)
 					) {
 						if ($tokens[$previousTokenBeforeStartPointer]['code'] === T_COMMA) {
 							$precedingTokenPointer = TokenHelper::findPreviousExcluding(
