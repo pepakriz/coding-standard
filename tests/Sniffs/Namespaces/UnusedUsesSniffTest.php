@@ -86,6 +86,7 @@ class UnusedUsesSniffTest extends \SlevomatCodingStandard\Sniffs\TestCase
 	public function testReturnTypeHint()
 	{
 		$this->assertNoSniffError($this->getFileReport(), 19);
+		$this->assertNoSniffError($this->getFileReport(), 20);
 	}
 
 	public function testUsedUseInsideAnnotation()

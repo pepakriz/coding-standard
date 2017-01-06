@@ -17,6 +17,7 @@ use X;
 use Lorem\FirstInterface;
 use Ipsum\SecondInterface;
 use Zetta\Rasmus;
+use Heavy\Metal;
 
 class TestClass implements FirstInterface, SecondInterface
 {
@@ -24,7 +25,7 @@ class TestClass implements FirstInterface, SecondInterface
 	/**
 	 * @Assert\NotBlank(groups={X::SOME_CONSTANT}
 	 */
-	public function test(S $s): Rasmus
+	public function test(S $s): ?Rasmus
 	{
 		new \Test\Foo\Bar();
 		$date = T::today();
@@ -37,6 +38,11 @@ class TestClass implements FirstInterface, SecondInterface
 		doFoo(USED_CONSTANT);
 
 		return new NewObject();
+	}
+
+	public function secondTest(): Metal
+	{
+
 	}
 
 }
